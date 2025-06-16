@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="google45705dea0475f963" />
-  <meta name="description" content="Cómo emprender con 0 euros desde tu habitación - Guía completa y gratuita">
-  <meta name="keywords" content="emprender sin dinero, emprender desde casa, ganar dinero online, ideas de negocio, trabajar desde casa">
-  <meta name="author" content="Eminencia Web">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cómo emprender con 0 euros desde tu habitación - Guía completa y gratuita" />
+  <meta name="keywords" content="emprender sin dinero, emprender desde casa, ganar dinero online, ideas de negocio, trabajar desde casa" />
+  <meta name="author" content="Eminencia Web" />
+  <meta property="og:title" content="Emprender desde tu habitación" />
+  <meta property="og:description" content="Guía gratuita con 5 estrategias para emprender desde casa sin dinero" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Emprende+Desde+Tu+Habitaci%C3%B3n" />
+  <meta property="og:url" content="https://emprende-gratis-1g94hvf82-carlos-projects-5c5b452e.vercel.app" />
   <title>Emprende desde tu Habitación - Guía Gratis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #0a0a23;
+      background: linear-gradient(90deg, #0a0a23, #1e1e60);
       color: #fff;
       padding: 2rem;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
     .container {
       max-width: 960px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 2rem;
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     h2 {
-      color: #0a0a23;
+      color: #1e1e60;
       margin-top: 2rem;
+      font-size: 1.5rem;
     }
     ul {
       padding-left: 1.5rem;
@@ -53,13 +73,33 @@
     }
     .cta {
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 3rem;
       font-size: 1.2rem;
+      padding: 1rem;
+      background: #f1f1f1;
+      border-radius: 10px;
     }
     .cta a {
-      color: #0a0a23;
+      color: #1e1e60;
       font-weight: bold;
       text-decoration: none;
+    }
+    .instagram-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #e1306c;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      text-decoration: none;
+      transition: background 0.3s ease;
+      z-index: 1000;
+    }
+    .instagram-float:hover {
+      background: #c72c61;
     }
   </style>
 </head>
@@ -70,10 +110,13 @@
   </header>
 
   <div class="container">
-    <h2>Introducción</h2>
-    <p>Emprender sin capital inicial puede parecer un reto abrumador, pero hoy en día, gracias a la tecnología y al acceso masivo a internet, es más accesible que nunca. Desde la comodidad de tu habitación puedes lanzar un negocio digital, monetizar tus conocimientos o incluso convertirte en una referencia dentro de tu nicho. Esta guía te dará 5 estrategias profundas y accionables para comenzar.</p>
 
-    <h2>1. Servicios Freelance</h2>
+    <h2 id="introduccion">Introducción</h2>
+    <p>
+      Emprender sin capital inicial puede parecer un reto abrumador, pero hoy en día, gracias a la tecnología y al acceso masivo a internet, es más accesible que nunca. Desde la comodidad de tu habitación puedes lanzar un negocio digital, monetizar tus conocimientos o incluso convertirte en una referencia dentro de tu nicho. Esta guía te dará 5 estrategias profundas y accionables para comenzar.
+    </p>
+
+    <h2 id="servicios-freelance">1. Servicios Freelance</h2>
     <p><strong>Qué es:</strong> Es intercambiar tus habilidades por dinero en el mercado global. Puedes comenzar sin ningún gasto inicial, solo necesitas un ordenador o un móvil y acceso a internet.</p>
     <p><strong>Pasos detallados:</strong></p>
     <ul>
@@ -84,7 +127,7 @@
       <li>Una vez consigas tus primeros proyectos, pide siempre reseñas para aumentar tu autoridad.</li>
     </ul>
 
-    <h2>2. Crear contenido en redes sociales</h2>
+    <h2 id="contenido-redes-sociales">2. Crear contenido en redes sociales</h2>
     <p><strong>Qué es:</strong> Utilizar redes sociales para construir una comunidad leal y generar ingresos a través de la visibilidad, colaboraciones, ventas de productos digitales y más.</p>
     <p><strong>Cómo hacerlo bien:</strong></p>
     <ul>
@@ -95,7 +138,7 @@
       <li>Una vez alcances cierta audiencia, puedes monetizar con colaboraciones, afiliados o servicios propios.</li>
     </ul>
 
-    <h2>3. Marketing de Afiliación</h2>
+    <h2 id="marketing-afiliacion">3. Marketing de Afiliación</h2>
     <p><strong>Qué es:</strong> Promocionar productos o servicios de terceros y ganar una comisión por cada venta que generes.</p>
     <p><strong>Implementación:</strong></p>
     <ul>
@@ -106,7 +149,7 @@
       <li>Evita el spam, aporta siempre valor real.</li>
     </ul>
 
-    <h2>4. Revender productos digitales gratuitos (PLR)</h2>
+    <h2 id="revender-productos">4. Revender productos digitales gratuitos (PLR)</h2>
     <p><strong>Qué es:</strong> Productos de licencia libre (PLR) que puedes modificar, personalizar y revender como tuyos.</p>
     <p><strong>Proceso completo:</strong></p>
     <ul>
@@ -117,28 +160,27 @@
       <li>Automatiza ventas con enlaces y correos automáticos.</li>
     </ul>
 
-    <h2>5. Mentoría y Consultoría Digital</h2>
+    <h2 id="mentoria-consultoria">5. Mentoría y Consultoría Digital</h2>
     <p><strong>Qué es:</strong> Compartir tu conocimiento con personas que quieren aprender lo que tú ya sabes hacer.</p>
     <p><strong>Pasos claros:</strong></p>
     <ul>
       <li>Piensa en algo que haces bien (organización, estudios, idiomas, diseño, hábitos, productividad).</li>
-      <li>Crea un servicio de mentoría básica. Puedes ofrecer las primeras sesiones gratis o a bajo costo.</li>
-      <li>Usa plataformas como Zoom o Google Meet para las sesiones.</li>
-      <li>Utiliza calendarios gratuitos como Calendly para gestionar tus citas.</li>
-      <li>Promociona tu mentoría con testimonios y casos de éxito.</li>
+      <li>Crea un plan simple para enseñar o ayudar: puede ser sesiones cortas, grupos o consultorías individuales.</li>
+      <li>Ofrece valor gratuito primero para ganar confianza (ejemplo: videos, posts, pequeños talleres).</li>
+      <li>Usa WhatsApp, Instagram o Zoom para tus sesiones.</li>
+      <li>Pide testimonios y mejora tus servicios con feedback.</li>
     </ul>
-
-    <h2>Conclusión</h2>
-    <p>Emprender desde casa sin dinero no solo es posible, es una realidad para miles de personas en todo el mundo. Lo único que necesitas es enfoque, dedicación, y sobre todo: pasar a la acción. No esperes al momento perfecto. Empieza ahora con lo que tienes y donde estás. Cada clic que hagas hoy es un paso más cerca de tu libertad financiera y profesional.</p>
 
     <div class="cta">
       <p>¿Quieres más contenido, tips diarios y estrategias exclusivas?</p>
-      <p>Sígueme en Instagram: <a href="https://instagram.com/carloosgmez_" target="_blank">@carloosgmez_</a></p>
+      <p>Sígueme en Instagram: <a href="https://instagram.com/carloosgmez_" target="_blank" rel="noopener noreferrer">@carloosgmez_</a></p>
     </div>
   </div>
 
   <footer>
     <p>&copy; 2025 - Hecho con pasión. Gratis para el mundo.</p>
   </footer>
+
+  <a href="https://instagram.com/carloosgmez_" class="instagram-float" target="_blank" rel="noopener noreferrer">Instagram</a>
 </body>
 </html>
